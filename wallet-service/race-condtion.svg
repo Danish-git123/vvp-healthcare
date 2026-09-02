@@ -1,0 +1,35 @@
+<svg width="380" height="424" viewBox="0 0 380 424" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#5f5e5a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="40" y="40" width="300" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.75"/>
+  <text x="190" y="62" text-anchor="middle" font-size="14" font-weight="600" fill="#2C2C2A">10 concurrent debit requests</text>
+  <text x="190" y="82" text-anchor="middle" font-size="12" fill="#444441">Rs.100 each, same instant, Rs.500 balance</text>
+
+  <line x1="190" y1="96" x2="190" y2="136" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="40" y="136" width="300" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.75"/>
+  <text x="190" y="158" text-anchor="middle" font-size="14" font-weight="600" fill="#042C53">wallet row lock (FOR UPDATE)</text>
+  <text x="190" y="178" text-anchor="middle" font-size="12" fill="#0C447C">one request processed at a time</text>
+
+  <path d="M190 192 L190 212 L110 212 L110 232" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M190 192 L190 212 L270 212 L270 232" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="40" y="232" width="140" height="56" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.75"/>
+  <text x="110" y="254" text-anchor="middle" font-size="14" font-weight="600" fill="#173404">first 5</text>
+  <text x="110" y="274" text-anchor="middle" font-size="12" fill="#27500A">200 OK</text>
+
+  <rect x="200" y="232" width="140" height="56" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.75"/>
+  <text x="270" y="254" text-anchor="middle" font-size="14" font-weight="600" fill="#501313">last 5</text>
+  <text x="270" y="274" text-anchor="middle" font-size="12" fill="#791F1F">422 fail</text>
+
+  <path d="M110 288 L110 308 L190 308 L190 328" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M270 288 L270 308 L190 308 L190 328" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="40" y="328" width="300" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.75"/>
+  <text x="190" y="350" text-anchor="middle" font-size="14" font-weight="600" fill="#2C2C2A">final balance = Rs.0.00</text>
+  <text x="190" y="370" text-anchor="middle" font-size="12" fill="#444441">never goes negative, guaranteed</text>
+</svg>
