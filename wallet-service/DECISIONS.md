@@ -66,5 +66,7 @@ It does block/wait but the lock lives in Java's heap memory, inside a single run
 Exceptions-> I created the Custome Exceptions cause the Spring's Exception are built for the Status+ Strings not to carry Objects  
 Thats it for this Assignment 
 
+Following is the link that helped me for Decision making between locking
+https://medium.com/@krichenenour2/optimistic-locking-vs-pessimistic-locking-in-plain-english-726a2c53a3eb
 
 
